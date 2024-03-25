@@ -31,10 +31,10 @@ document.write(`El resultado es ${resultado}`);
 ejercicio 5.1
 
 escriba un programa que pida dos numeros y escriba en la pantalla cual es el mayor
-*/
 
 const num1 = parseInt(prompt('ingrese un numero 1'));
 const num2 = parseInt(prompt('ingrese un numero 2'));
+
 
 function mayor (){
     if (num1 > num2) {
@@ -45,8 +45,32 @@ function mayor (){
         console.log (`son iguales`)
     }
 }
-document.log(`El resultado es ${resultado}`);
 
+
+mayor ()
+
+EJERCICIO 7
+
+Escribe un programa que pida 3 numeros y escriba en la pantalla el mayor de los tres.
+
+
+*/
+const num1 = parseInt(prompt('ingrese un numero 1'));
+const num2 = parseInt(prompt('ingrese un numero 2'));
+
+
+function mayor (){
+    if (num1 > num2) {
+        console.log (`El ${num1} es el mas grande`);
+    } else if (num2>num1){
+        console.log (`El ${num2} es el mas grande`)
+    } else {
+        console.log (`son iguales`)
+    }
+}
+
+
+mayor ()
 
 
 
