@@ -92,7 +92,7 @@ Output: El 10 es divisible por 2.
 Output: El 15 no es divisible por 2.
 
 
-*/
+
 
 function par () {
     const n = prompt("ingrese un numero: ");
@@ -105,5 +105,25 @@ function par () {
 
 par()
 
+EJERCICIO 9 
 
+- Escribe un programa que pida una frase y escriba las vocales que aparecen
+Nota: Tener en cuenta la función length y substring o charAt (developer mozilla)
 
+Ejemplo:
+input: Hola mundo           Output: oauo
+*/
+
+function encontrarVocales () {
+    const vocalesEncontradas = '';
+    for (var i = 0; i < frase.length; i++) {
+        
+}
+function vocales() {
+    const frase = prompt("Dime una frase");
+    const conteo = frase.length;
+    if (frase)
+    var sub = str.substring(0, conteo)
+ }
+
+vocales();
