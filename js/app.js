@@ -54,7 +54,7 @@ EJERCICIO 7
 Escribe un programa que pida 3 numeros y escriba en la pantalla el mayor de los tres.
 
 
-*/
+
 const num1 = parseInt(prompt('ingrese un numero 1'));
 const num2 = parseInt(prompt('ingrese un numero 2'));
 const num3 = parseInt(prompt('ingrese un numero 3'));
@@ -82,8 +82,28 @@ function mayor (num1,num2,num3){
 
 mayor (num1, num2, num3)
 
+EJERCICIO 8 
+
+Escribe un programa que pida un número y diga si es divisible por 2
+Ejemplo:
+input: 10
+input: 15
+Output: El 10 es divisible por 2.
+Output: El 15 no es divisible por 2.
 
 
+*/
+
+function par () {
+    const n = prompt("ingrese un numero: ");
+    if (n % 2 == 0) {
+        console.log(`${n} es par`);
+    } else {
+        console.log(`${n} es impar`);
+    }
+}
+
+par()
 
 
 
