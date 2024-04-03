@@ -114,7 +114,12 @@ Ejemplo:
 input: Hola mundo           Output: oauo
 */
 
-function encontrarVocales () {
+// Definimos la función esVocal
+function esVocal(caracter) {
+    return 'aeiouAEIOU'.indexOf(caracter) !== -1;
+}
+
+function encontrarVocales (frase) {
     const vocalesEncontradas = '';
     for (var i = 0; i < frase.length; i++) {
         
