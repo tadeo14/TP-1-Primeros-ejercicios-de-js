@@ -138,20 +138,23 @@ input: 20 Output: El 20 es divisible por 2.
 
 function divisible() {
     const n = prompt("Ingrese un número: ");
-    
-    if (n % 2 === 0) {
-        console.log(`El ${n} es divisible por 2.`);
-    } else if (n % 3 === 0) {
-        console.log(`El ${n} es divisible por 3.`);
-    } else if (n % 5 === 0) {
-        console.log(`El ${n} es divisible por 5.`);
-    } else if (n % 7 === 0) {
-        console.log(`El ${n} es divisible por 7.`);
+    if (n % 2 === 0 || (n % 3 === 0) || (n % 5 === 0) || (n % 7 === 0)) {
+        if (n % 2 === 0) {
+            console.log(`El ${n} es divisible por 2.`);
+        }
+        if (n % 3 === 0) {
+            console.log(`El ${n} es divisible por 3.`);
+        }
+        if (n % 5 === 0) {
+            console.log(`El ${n} es divisible por 5.`);
+        }
+        if (n % 7 === 0) {
+            console.log(`El ${n} es divisible por 7.`);
+        }
     } else {
         console.log(`El ${n} no es divisible por ninguno de los números anteriores.`);
     }
 }
-
 divisible();
 
 
