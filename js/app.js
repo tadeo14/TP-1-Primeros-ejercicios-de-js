@@ -114,21 +114,19 @@ Ejemplo:
 input: Hola mundo           Output: oauo
 */
 
-// Definimos la función esVocal
-function esVocal(caracter) {
-    return 'aeiouAEIOU'.indexOf(caracter) !== -1;
+let phrase = prompt('Escribe una frase');
+phrase = phrase.toLowerCase(); //para pasar a minuscula
+console.log(phrase);
+for (let i = 0; i < phrase.length; i++) {
+	if (
+		phrase.substr(i, 1) == 'a' ||
+		phrase.substr(i, 1) == 'e' ||
+		phrase.substr(i, 1) == 'i' ||
+		phrase.substr(i, 1) == 'o' ||
+		phrase.substr(i, 1) == 'u'
+	) {
+		document.write(phrase.substr(i, 1));
+	}     //con el substr extraemos las vocales, luego con el bucle for  vamos comparando cada letra de la fr
 }
 
-function encontrarVocales (frase) {
-    const vocalesEncontradas = '';
-    for (var i = 0; i < frase.length; i++) {
-        
-}
-function vocales() {
-    const frase = prompt("Dime una frase");
-    const conteo = frase.length;
-    if (frase)
-    var sub = str.substring(0, conteo)
- }
 
-vocales();
