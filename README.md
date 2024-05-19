@@ -1,1 +1,1 @@
-- [] probando esto
+- [ ] probando esto
