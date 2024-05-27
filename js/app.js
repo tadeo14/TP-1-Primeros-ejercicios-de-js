@@ -1,3 +1,5 @@
+
+
 //1 ejercicio
 /*
 alert("un mensaje");
@@ -135,7 +137,32 @@ Ejemplo:
 input: 20 Output: El 20 es divisible por 2.
 
 */
+const button = document.querySelector('#miBoton');
 
+button.addEventListener('click', divisible);
+
+
+function divisible() {
+
+    let n1 = prompt("Escribe un numero: ");
+    if (n1 % 2 == 0 || n1 % 3 == 0 || n1 % 5 == 0 || n1 % 7 == 0) {
+        document.write("El numero es divisible por 2, 3, 5 o 7");
+    } else {
+        document.write("El numero ingresado no es divisible por 2, ni por 3, ni por 5, ni por 7");
+    
+    }
+}
+
+
+/*
+11.- Añadir al ejercicio anterior que nos diga por cuál de los cuatro es divisible (hay
+    que decir todos por los que es divisible)
+    Ejemplo:
+    input: 20
+    input: 210
+    Output: El 20 es divisible por 2 y por 5.
+    Output: El 210 es divisible por 2, por 3,
+    por 5 y por 7.
 function divisible() {
     const n = prompt("Ingrese un número: ");
     if (n % 2 === 0 || (n % 3 === 0) || (n % 5 === 0) || (n % 7 === 0)) {
@@ -156,5 +183,4 @@ function divisible() {
     }
 }
 divisible();
-
-
+*/
