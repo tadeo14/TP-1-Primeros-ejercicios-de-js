@@ -1,3 +1,5 @@
+
+
 //1 ejercicio
 /*
 alert("un mensaje");
@@ -54,7 +56,7 @@ EJERCICIO 7
 Escribe un programa que pida 3 numeros y escriba en la pantalla el mayor de los tres.
 
 
-*/
+
 const num1 = parseInt(prompt('ingrese un numero 1'));
 const num2 = parseInt(prompt('ingrese un numero 2'));
 const num3 = parseInt(prompt('ingrese un numero 3'));
@@ -82,8 +84,103 @@ function mayor (num1,num2,num3){
 
 mayor (num1, num2, num3)
 
+EJERCICIO 8 
+
+Escribe un programa que pida un número y diga si es divisible por 2
+Ejemplo:
+input: 10
+input: 15
+Output: El 10 es divisible por 2.
+Output: El 15 no es divisible por 2.
 
 
 
 
+function par () {
+    const n = prompt("ingrese un numero: ");
+    if (n % 2 == 0) {
+        console.log(`${n} es par`);
+    } else {
+        console.log(`${n} es impar`);
+    }
+}
 
+par()
+
+EJERCICIO 9 
+
+- Escribe un programa que pida una frase y escriba las vocales que aparecen
+Nota: Tener en cuenta la función length y substring o charAt (developer mozilla)
+
+Ejemplo:
+input: Hola mundo           Output: oauo
+
+
+let phrase = prompt('Escribe una frase');
+phrase = phrase.toLowerCase(); //para pasar a minuscula
+console.log(phrase);
+for (let i = 0; i < phrase.length; i++) {
+	if (
+		phrase.substr(i, 1) == 'a' ||
+		phrase.substr(i, 1) == 'e' ||
+		phrase.substr(i, 1) == 'i' ||
+		phrase.substr(i, 1) == 'o' ||
+		phrase.substr(i, 1) == 'u'
+	) {
+		document.write(phrase.substr(i, 1));
+	}     //con el substr extraemos las vocales, luego con el bucle for  vamos comparando cada letra de la fr
+}
+
+10.- Escribe un programa que pida un número y nos diga si es divisible por 2, 3, 5 o
+7 (sólo hay que comprobar si lo es por uno de los cuatro)
+Ejemplo:
+input: 20 Output: El 20 es divisible por 2.
+
+*/
+const button = document.querySelector('#miBoton');
+
+button.addEventListener('click', divisible);
+
+
+function divisible() {
+
+    let n1 = prompt("Escribe un numero: ");
+    if (n1 % 2 == 0 || n1 % 3 == 0 || n1 % 5 == 0 || n1 % 7 == 0) {
+        document.write("El numero es divisible por 2, 3, 5 o 7");
+    } else {
+        document.write("El numero ingresado no es divisible por 2, ni por 3, ni por 5, ni por 7");
+    
+    }
+}
+
+
+/*
+11.- Añadir al ejercicio anterior que nos diga por cuál de los cuatro es divisible (hay
+    que decir todos por los que es divisible)
+    Ejemplo:
+    input: 20
+    input: 210
+    Output: El 20 es divisible por 2 y por 5.
+    Output: El 210 es divisible por 2, por 3,
+    por 5 y por 7.
+function divisible() {
+    const n = prompt("Ingrese un número: ");
+    if (n % 2 === 0 || (n % 3 === 0) || (n % 5 === 0) || (n % 7 === 0)) {
+        if (n % 2 === 0) {
+            console.log(`El ${n} es divisible por 2.`);
+        }
+        if (n % 3 === 0) {
+            console.log(`El ${n} es divisible por 3.`);
+        }
+        if (n % 5 === 0) {
+            console.log(`El ${n} es divisible por 5.`);
+        }
+        if (n % 7 === 0) {
+            console.log(`El ${n} es divisible por 7.`);
+        }
+    } else {
+        console.log(`El ${n} no es divisible por ninguno de los números anteriores.`);
+    }
+}
+divisible();
+*/
